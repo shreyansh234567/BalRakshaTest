@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", sans-serif;
+  --color-primary: #e31837; /* Bal Raksha Bharat red */
+  --color-primary-dark: #cc1531;
+  --color-secondary: #ffc107;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* Custom styles and animations */
+.smooth-scroll {
+  scroll-behavior: smooth;
+}
+
+.hover-lift {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.hover-lift:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+}
